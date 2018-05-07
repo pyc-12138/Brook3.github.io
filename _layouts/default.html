@@ -1,0 +1,15 @@
+<!-- 头部 -->
+{% include default/block/header.html %}
+
+<!-- 侧边栏 -->
+{% include default/block/sidebar.html %}
+
+<section class="main-content">
+	<!-- {{ siteNavigation }} -->
+	{% include default/siteNavigation/index.html %}
+</section>
+
+	<!-- 侧边栏js引入 -->
+	<script type="text/javascript" src="{{ '/assets/js/sidebar.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<!-- 底部 -->
+{% include default/block/footer.html %}

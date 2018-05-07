@@ -1,0 +1,7 @@
+.site-sidebar{
+	width:5%;
+	height:100%;
+	background-color:red;
+    float: left;
+    position: absolute;
+}
