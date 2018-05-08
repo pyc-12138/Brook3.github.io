@@ -1,0 +1,12 @@
+.site-sidebar{
+	width:5%;
+	height:100%;
+	background-color:red;
+    float:left;
+    position:absolute;
+	/* display:none; */
+	margin-left:-4%;
+}
+.site-sidebar:hover{
+	margin-left:0;
+}

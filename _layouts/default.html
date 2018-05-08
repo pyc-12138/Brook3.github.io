@@ -5,11 +5,24 @@
 {% include default/block/sidebar.html %}
 
 <section class="main-content">
-	<!-- {{ siteNavigation }} -->
-	{% include default/siteNavigation/index.html %}
+	<div class="searchPage">
+		{% include default/searchPage/index.html %}
+	</div>
+	<div class="homePage display-none">
+		{% include default/homePage/index.html %}
+	</div>
+	<div class="siteNavigation display-none">
+		{% include default/siteNavigation/index.html %}
+	</div>
+	<div class="notes display-none">
+		{% include default/notes/index.html %}
+	</div>
+	<div class="blogs display-none">
+		{% include default/blogs/index.html %}
+	</div>
 </section>
 
 	<!-- 侧边栏js引入 -->
-	<script type="text/javascript" src="{{ '/assets/js/sidebar.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+	<script type="text/javascript" src="{{ '/assets/default/js/sidebar.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 <!-- 底部 -->
 {% include default/block/footer.html %}
