@@ -14,3 +14,26 @@ $$(".search-dropdown ul li").each(function(e){
 /* $$(":not(.search-dropdown)").addEvent('click',function(){
 	console.log('yes');
 }); */
+
+//获取输入内容，不同的搜索引擎需要独立配置
+$$(".search-btn").addEvent('click',function(){
+    console.log($$(".search-input").get("value"));
+    console.log($("search-logo").get("data-engine"));
+    var searchType=$("search-logo").get("data-engine");
+    var url='';
+    switch(searchType){
+        case 'baidu':
+            url='//www.baidu.com/s?wd=';
+            break;
+        case 'bing':
+            url='//cn.bing.com/search?q=';
+            break;
+        case 'sogou':
+            url='//www.sogou.com/web?query=';
+            break;
+        case 'google':
+            url='//www.google.com.hk';
+            break;
+    }
+    location.href=url+$$(".search-input").get("value");
+});
