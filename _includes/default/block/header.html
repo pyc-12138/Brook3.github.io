@@ -6,13 +6,13 @@
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="{{ '/assets/default/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ '/assets/default/css/style.scss?v=' | append: site.github.build_revision | relative_url }}"> -->
 	<!-- 自定义样式 -->
     <link rel="stylesheet" href="{{ '/assets/default/css/Brook3.css?v=' | append: site.github.build_revision | relative_url }}">
 	<!-- js框架引入 mootools -->
 	<script type="text/javascript" src="{{ '/assets/default/js/block/moo_min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </head>
-  <body>
+  <body class="background-image">
 	<section class="page-header">
 	  <h1 class="project-name">{{ site.title | index: site.github.repository_name }}</h1>
 	  <h2 class="project-tagline">{{ site.description | index: site.github.project_tagline }}</h2>
