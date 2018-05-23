@@ -37,3 +37,8 @@ $$(".search-btn").addEvent('click',function(){
     }
     location.href=url+$$(".search-input").get("value");
 });
+$$("body").addEvent('keydown',function() {
+if (event.keyCode == "13") {//keyCode=13是回车键
+	$$('.search-btn')[0].click();
+}
+});
