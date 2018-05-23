@@ -1,26 +1,23 @@
-<!-- 头部 -->
 {% include default/block/header.html %}
 
-<!-- 侧边栏 -->
 {% include default/block/sidebar.html %}
 
 <section class="main-content">
 	<div class="searchPage">
-		{% include default/searchPage/index.html %}
+		{% include default/searchPage.html %}
+	</div>
+	<div class="siteNavigation">
+		{% include default/siteNavigation.html %}
 	</div>
 	<div class="homePage display-none">
-		{% include default/homePage/index.html %}
-	</div>
-	<div class="siteNavigation display-none">
-		{% include default/siteNavigation/index.html %}
+		{% include default/homePage.html %}
 	</div>
 	<div class="notes display-none">
-		{% include default/notes/index.html %}
+		{% include default/notes.html %}
 	</div>
 	<div class="blogs display-none">
-		{% include default/blogs/index.html %}
+		{% include default/blogs.html %}
 	</div>
 </section>
 
-<!-- 底部 -->
 {% include default/block/footer.html %}
