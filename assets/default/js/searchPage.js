@@ -17,8 +17,6 @@ $$(".search-dropdown ul li").each(function(e){
 
 //获取输入内容，不同的搜索引擎需要独立配置
 $$(".search-btn").addEvent('click',function(){
-    console.log($$(".search-input").get("value"));
-    console.log($("search-logo").get("data-engine"));
     var searchType=$("search-logo").get("data-engine");
     var url='';
     switch(searchType){
